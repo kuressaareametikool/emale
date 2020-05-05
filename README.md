@@ -4,10 +4,6 @@
 ```
 npm install
 ```
-### Generate tailwind css file
-```
-npm run twbuild
-```
 
 ### Compiles and hot-reloads for development
 ```
