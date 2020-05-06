@@ -1,7 +1,7 @@
 .DS_Store
 node_modules
 /dist
-public/build/tailwind.css
+/public/build/tailwind.css
 
 # local env files
 .env.local
