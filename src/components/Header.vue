@@ -64,20 +64,21 @@ export default {};
 
 #header-background-flower {
   position: absolute;
-  height: 270px;
-  width: 300px;
+  height: 400px;
+  width: 450px;
   bottom: 0;
+  left: -12rem;
   background-image: url("../assets/header-background-flower.svg");
   background-repeat: no-repeat;
   background-position: bottom left;
-  background-size: contain;
+  background-size: cover;
   opacity: 0.6;
 }
 
 #header-background-leaves {
   position: absolute;
   bottom: 1rem;
-  right: 0;
+  right: -1rem;
 }
 
 #header-section-divider {
@@ -91,11 +92,22 @@ export default {};
 }
 
 @media screen and (min-width: 640px) {
+  #header-background-flower {
+    left: -3rem;
+    height: 330px;
+    width: 380px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   #header-section {
     height: 100vh;
+  }
+  #header-background-flower {
+    opacity: 1;
+    height: 170px;
+    width: 200px;
+    left: 9rem;
   }
 }
 </style>
