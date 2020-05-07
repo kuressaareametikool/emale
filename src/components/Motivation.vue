@@ -1,5 +1,5 @@
 <template>
-  <section id="motivation-section" class="mt-20 font-sans font-light text-brown">
+  <section id="motivation-section" class="mt-16 pt-4 font-sans font-light text-brown">
     <div class="mb-16">
       <h1 class="font-serif text-center text-xl">Mis on meie motivatsioon?</h1>
       <img class="mx-auto" src="../assets/heading-line.svg" alt="Line under heading" />

@@ -1,0 +1,135 @@
+<template>
+  <section
+    id="footer-section"
+    class="mt-16 w-screen h-full bg-yellow-dark font-sans text-brown relative"
+  >
+    <div id="footer-background-pattern"></div>
+    <div id="footer-divider"></div>
+    <div class="container">
+      <div class="pt-24 mb-12">
+        <h1 class="font-serif text-center text-xl">Kirjuta meile!</h1>
+      </div>
+      <div class="flex flex-col text-right lg:flex-row">
+        <form netlify class="my-8 sm:max-w-lg sm:mx-auto lg:w-1/2">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nimi"
+            class="mb-8 rounded-lg p-4 text-sm placeholder-brown placeholder-opacity-75 shadow-lg w-full"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-maili aadress"
+            class="mb-8 rounded-lg p-4 text-sm placeholder-brown placeholder-opacity-75 shadow-lg w-full"
+          />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Räägi meile oma lugu"
+            class="mb-8 rounded-lg p-4 text-sm placeholder-brown placeholder-opacity-75 shadow-lg w-full"
+          ></textarea>
+          <button
+            type="submit"
+            class="uppercase text-base font-medium bg-white py-3 px-6 rounded-lg shadow-lg hover:shadow-none"
+          >Saada</button>
+        </form>
+        <div class="lg:w-1/2">
+          <div class="my-8 lg:max-w-sm lg:mx-auto">
+            <h1 class="font-serif text-center text-xl lg:text-left">Kontakt</h1>
+          </div>
+          <div class="sm:flex sm:justify-between sm:max-w-sm sm:mx-auto">
+            <div class="mb-6 flex flex-col text-center sm:text-left">
+              <span>Eesnimi Perenimi</span>
+              <a
+                class="my-2 font-light text-sm opacity-75"
+                href="mailto:eesnimi@emale.ee"
+              >eesnimi@emale.ee</a>
+              <a class="my-2 font-light text-sm opacity-75" href="tel:+3725554040">+372 555 4040</a>
+            </div>
+            <div class="mb-4 flex flex-col text-center sm:text-right">
+              <span>Eesnimi Perenimi</span>
+              <a
+                class="my-2 font-light text-sm opacity-75"
+                href="mailto:eesnimi@emale.ee"
+              >eesnimi@emale.ee</a>
+              <a class="font-light text-sm opacity-75" href="tel:+3725554040">+372 555 4040</a>
+            </div>
+          </div>
+          <div class="w-10/12 mx-auto border border-white opacity-25"></div>
+          <div class="sm:flex sm:justify-between sm:max-w-sm sm:mx-auto">
+            <div class="text-center my-8 sm:text-left">
+              <span class="font-serif text-center text-lg">MTU Emale</span>
+              <p class="mt-8 font-light text-sm opacity-75">reg.nr. 80571306</p>
+              <p class="my-2 font-light text-sm opacity-75">Lasnamäe tn. 32-38</p>
+              <p class="font-light text-sm opacity-75">
+                Tallinn
+                <span class="mx-2">|</span>11413
+              </p>
+            </div>
+            <div class="text-center my-8 sm:text-right">
+              <span class="font-serif text-center text-lg">Toeta meid</span>
+              <p class="mt-8 uppercase text-sm">Lhv pank</p>
+              <p class="mt-2 text-sm opacity-50 sm:overflow-x-auto">EE207700771004154508</p>
+            </div>
+          </div>
+          <div class="w-10/12 mx-auto border border-white opacity-25"></div>
+          <div class="mt-8 text-center lg:max-w-sm lg:mx-auto lg:text-left">
+            <span class="font-serif text-center text-lg">Jälgi meid sotsiaalmeedias</span>
+            <div class="my-8 flex justify-center flex-row lg:justify-start">
+              <a href="https://www.facebook.com/mtyEmale/">
+                <img src="../assets/facebook-icon.svg" alt="Facebook icon" />
+              </a>
+              <a class="ml-8" href="https://www.instagram.com/mtyEmale/">
+                <img src="../assets/instagram-icon.svg" alt="Instragram icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 w-full border border-white"></div>
+    <div class="py-6 flex justify-center relative">
+      <p class="text-sm opacity-50">@ 2020 MTÜ Emale</p>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style scoped>
+.container {
+  width: 90%;
+  max-width: 1088px;
+  margin: auto;
+  height: 100%;
+  position: relative;
+}
+
+#footer-divider {
+  position: absolute;
+  top: -1px;
+  width: 100%;
+  height: 27px;
+  background-image: url(../assets/header-section-divider.png);
+  background-repeat: repeat-x;
+  background-position: left;
+  transform: rotate(180deg);
+}
+
+#footer-background-pattern {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/header-background-pattern.svg);
+  background-repeat: repeat;
+  z-index: 0;
+  opacity: 0.5;
+}
+</style>
