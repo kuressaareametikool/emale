@@ -11,13 +11,13 @@
           class="mb-8 w-full bg-yellow-light p-8 rounded-lg sm:max-w-lg sm:mx-auto lg:w-1/2 lg:text-xl lg:w-1/2 lg:mr-2"
         >
           <p
-            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left leading-6 lg:text-left"
+            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left lg:text-left"
           >Siiski on Eestil palju veel areneda, et ka sisuliselt toetada naisi ja emasid.</p>
           <p
-            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left leading-6"
+            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left"
           >Selleks on vaja hakata hindama naiste mitterahalist panust.</p>
           <p
-            class="tracking-wide leading-6 sm:text-center lg:text-left leading-6"
+            class="tracking-wide leading-6 sm:text-center lg:text-left"
           >Selleks on vaja märgata võimalike kitsaskohti seaduandluses, et emad oleks kaitstud rahaliste ja juriidiliste raskuste eest.</p>
         </div>
         <!-- Concern content right -->
@@ -25,15 +25,15 @@
           class="mb-8 w-full bg-yellow-light p-8 rounded-lg sm:max-w-lg sm:mx-auto lg:w-1/2 lg:text-xl lg:ml-2"
         >
           <p
-            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left leading-6"
+            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left"
           >Oluline on pakkuda vajalikku infot ja tuge, et leida lahendusi läbi keeruliste olukordade, mis puudutavad koduvägivalda.</p>
           <p
-            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left leading-6"
+            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left"
           >Palju on veel teha, et tõesti näidata emadele, et nende panust hinnatakse, märgatakse ja peetakse oluliseks.</p>
           <p
-            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left leading-6"
+            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left"
           >Ainult sõnadest ei piisa.</p>
-          <p class="tracking-wide leading-6 sm:text-center lg:text-left leading-6">Vaja on tegusid.</p>
+          <p class="tracking-wide leading-6 sm:text-center lg:text-left">Vaja on tegusid.</p>
         </div>
       </div>
       <!-- Concern section image -->
