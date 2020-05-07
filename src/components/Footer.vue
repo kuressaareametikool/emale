@@ -10,7 +10,7 @@
         <h1 class="font-serif text-center text-xl">Kirjuta meile!</h1>
       </div>
       <div class="flex flex-col text-right lg:flex-row">
-        <form netlify class="my-8 sm:max-w-lg sm:mx-auto lg:w-1/2">
+        <form method="POST" data-netlify="true" name="contact" class="my-8 sm:max-w-lg sm:mx-auto lg:w-1/2">
           <input
             type="text"
             name="name"
