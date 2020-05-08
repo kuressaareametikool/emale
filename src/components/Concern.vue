@@ -11,29 +11,29 @@
           class="mb-8 w-full bg-yellow-light p-8 rounded-lg sm:max-w-lg sm:mx-auto lg:w-1/2 lg:text-xl lg:w-1/2 lg:mr-2"
         >
           <p
-            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left leading-6 lg:text-left"
-          >Siiski on Eestil palju veel areneda, et ka sisuliselt toetada naisi ja emasid.</p>
+            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left lg:text-left"
+          >Eestis on palju kitsaskohti, mis vajavad praktilis lahendusi, et toetada naisi ja emasid.</p>
           <p
-            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left leading-6"
-          >Selleks on vaja hakata hindama naiste mitterahalist panust.</p>
+            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left"
+          >Naiste mitterahalise panuse hindamine, lähisuhtevägivald, varalised suhted kooselus ning rasedate ja sünnitajate õigused on vaid mõned näited..</p>
           <p
-            class="tracking-wide leading-6 sm:text-center lg:text-left leading-6"
-          >Selleks on vaja märgata võimalike kitsaskohti seaduandluses, et emad oleks kaitstud rahaliste ja juriidiliste raskuste eest.</p>
+            class="tracking-wide leading-6 sm:text-center lg:text-left"
+          >Tuleb leida kitsaskohad seadustes, hariduses ja ühsikonnas, et praegused ja tulevased emad oleks kaitstud.</p>
         </div>
         <!-- Concern content right -->
         <div
           class="mb-8 w-full bg-yellow-light p-8 rounded-lg sm:max-w-lg sm:mx-auto lg:w-1/2 lg:text-xl lg:ml-2"
         >
           <p
-            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left leading-6"
-          >Oluline on pakkuda vajalikku infot ja tuge, et leida lahendusi läbi keeruliste olukordade, mis puudutavad koduvägivalda.</p>
+            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left"
+          >Oluline on võimaldada emadele parim ettevalmistus, oma õiguste tundmine ning juriidiline, emotsionaalne ja majanduslik turvatunne.</p>
           <p
-            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left leading-6"
-          >Palju on veel teha, et tõesti näidata emadele, et nende panust hinnatakse, märgatakse ja peetakse oluliseks.</p>
+            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left"
+          >Palju on veel teha, et näidata emadele, kuidas meie panust märgatakse ja peetakse oluliseks.</p>
           <p
-            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left leading-6"
+            class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left"
           >Ainult sõnadest ei piisa.</p>
-          <p class="tracking-wide leading-6 sm:text-center lg:text-left leading-6">Vaja on tegusid.</p>
+          <p class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left">Vaja on tegusid.</p>
         </div>
       </div>
       <!-- Concern section image -->

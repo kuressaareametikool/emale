@@ -16,7 +16,7 @@
             <p
               class="mb-8 mx-auto opacity-75 text-center tracking-wide leading-6 sm:max-w-lg sm:text-xl sm:leading-8 lg:text-left lg:w-full"
             >Meie eesmärk on rääkida emade jaoks olulistest teemadest ning algatada ühiskondike arutelusid ning olulisi muudatusi, et muuta emade elukorraldust Eestis paremaks.</p>
-            <div class="mx-auto flex flex-col sm:flex-row lg:mx-0">
+            <div class="mx-auto flex flex-col-reverse sm:flex-row lg:mx-0">
               <a
                 class="mb-8 sm:mr-8 bg-white py-4 rounded-lg shadow-lg text-center px-10 cursor-pointer hover:shadow-none"
                 href="#"
@@ -25,6 +25,17 @@
                 class="mb-8 bg-white py-4 rounded-lg shadow-lg text-center px-10 cursor-pointer hover:shadow-none"
                 href="#"
               >Kalkulaator</a>
+            </div>
+            <div class="mx-auto text-center lg:mx-0 lg:text-left">
+              <p class="text-xs opacity-50 flex max-w-xs lg:max-w-none">
+                <span class="mr-2">
+                  <img
+                    class="hidden h-3 pt-1 lg:block"
+                    src="../assets/star-icon.svg"
+                    alt="Star of Life icon"
+                  />
+                </span>Kirjuta sulle olulisest teemast, mis vajab käsitlemist või jutusta oma lugu.
+              </p>
             </div>
           </div>
           <!-- Header content right -->

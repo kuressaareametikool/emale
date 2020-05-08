@@ -9,7 +9,7 @@
         <div class="mb-16 sm:mb-8">
           <p class="tracking-wide text-center leading-8 sm:mx-auto sm:max-w-lg sm:text-lg">
             Selleks oleme asutanud MTÜ Emale.
-            Soovime anda hääle emade rääkimata lugudele, soovidele, muredele ja vajadustele, et läbi selle tuua muutust, ühtehoidmist ja paremat elukvaliteeti tulevastele ja praegustele emadele ning nende lastele.
+            <br />Soovime anda hääle emade rääkimata lugudele, soovidele, muredele ja vajadustele. Läbi selle loome muutusi, ühtehoidmist ja paremat elukvaliteeti tulevastele ning praegustele emadele ja lastele.
           </p>
         </div>
         <div>

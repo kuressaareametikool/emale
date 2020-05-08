@@ -5,6 +5,7 @@
     <Motivation />
     <Concern />
     <Solution />
+    <Footer />
     <Calculator />
   </div>
 </template>
@@ -16,6 +17,7 @@ import Motivation from "./components/Motivation.vue";
 import Concern from "./components/Concern.vue";
 import Solution from "./components/Solution.vue";
 import Calculator from "./components/Calculator.vue"
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
@@ -24,6 +26,8 @@ export default {
     Header,
     Motivation,
     Concern,
+    Solution,
+    Footer
     Solution,
     Calculator
   }
