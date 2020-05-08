@@ -12,7 +12,10 @@
     <div class="container">
       <p
         class="font-bold font-sans mb-8 tracking-wide leading-6 sm:text-left lg:text-left leading-8"
-      >Kokku oleksite teeninud: <span> {{total | currency}} </span></p>
+      >
+        Kokku oleksite teeninud:
+        <span>{{total | currency}}</span>
+      </p>
 
       <div id="calc-container">
         <form class="w-full">
@@ -33,7 +36,11 @@
                   id="input-occupation"
                   v-model="item.occupation"
                 >
-                  <option v-for="(occupation, index) in occupations" :key="index" :value="occupation">{{occupation.name}}</option>
+                  <option
+                    v-for="(occupation, index) in occupations"
+                    :key="index"
+                    :value="occupation"
+                  >{{occupation.name}}</option>
                 </select>
                 <div
                   class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
@@ -69,7 +76,8 @@
               >
                 <svg
                   class="stroke-current"
-                  width="27" height="27"
+                  width="27"
+                  height="27"
                   stroke-width="3"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -80,109 +88,147 @@
           </div>
         </form>
         <transition-group name="list" class="container">
-           <div class= "w-full flex items-center border-t border-gray h-16 " v-for="(item,index) in budget" :key="index">
-             <div class="md:w-1/12 w-2/12 text-center font-bold leading-10 overflow-hidden">{{item.hours}}h</div>
-             <div class="md:w-3/12 w-5/12 text-center font-normal leading-10 overflow-hidden">{{item.occupation.name}}</div>
-             <div class="md:w-5/12 w-0 hidden sm:block text-center leading-8 overflow-hidden">{{item.comment}}</div>
-             <div class="sm:hidden" v-tooltip="item.comment"><InfoIcon class="h-6 w-6" /></div>
-             <div class="md:w-2/12 w-3/12 text-center font-bold leading-10 overflow-hidden">{{(item.hours*(item.occupation.rate*1.654321)) | currency }}</div>
-             <div class="md:w-1/12 w-2/12  text-center transform hover:-translate-y-1 hover:scale-110 px-2">
-             <button id="delete-btn"
-              @click="remove(index)"
-              class="flex items-center justify-center text-white bg-red rounded h-10">
-               <svg class="fill-current" xmlns="http://www.w3.org/2000/svg"
-               width="17.154" 
-               height="21.176">
-               <path class="a" d="M.497 8.13c.08.083 2.486 12.546 2.486 12.546h9.3L15.655 8.13z"/>
-               <path class="b" d="M3.219 10.758l1.681 8.1M7.993 10.878l.004 8.063M13.064 10.818l-2.18 7.98"/>
-               <path class="a" d="M16.016 6.772L1.222 2.098S4.29.293 9.11 1.934a13.907 13.907 0 016.906 4.838z"/></svg>
-             </button>
-             </div>
-           </div>
+          <div
+            class="w-full flex items-center border-t border-gray h-16"
+            v-for="(item,index) in budget"
+            :key="index"
+          >
+            <div
+              class="md:w-1/12 w-2/12 text-center font-bold leading-10 overflow-hidden"
+            >{{item.hours}}h</div>
+            <div
+              class="md:w-3/12 w-5/12 text-center font-normal leading-10 overflow-hidden"
+            >{{item.occupation.name}}</div>
+            <div
+              class="md:w-5/12 w-0 hidden sm:block text-center leading-8 overflow-hidden"
+            >{{item.comment}}</div>
+            <div class="sm:hidden" v-tooltip="item.comment">
+              <InfoIcon class="h-6 w-6" />
+            </div>
+            <div
+              class="md:w-2/12 w-3/12 text-center font-bold leading-10 overflow-hidden"
+            >{{(item.hours*(item.occupation.rate*1.654321)) | currency }}</div>
+            <div
+              class="md:w-1/12 w-2/12 text-center transform hover:-translate-y-1 hover:scale-110 px-2"
+            >
+              <button
+                id="delete-btn"
+                @click="remove(index)"
+                class="flex items-center justify-center text-white bg-red rounded h-10"
+              >
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17.154"
+                  height="21.176"
+                >
+                  <path
+                    class="a"
+                    d="M.497 8.13c.08.083 2.486 12.546 2.486 12.546h9.3L15.655 8.13z"
+                  />
+                  <path
+                    class="b"
+                    d="M3.219 10.758l1.681 8.1M7.993 10.878l.004 8.063M13.064 10.818l-2.18 7.98"
+                  />
+                  <path
+                    class="a"
+                    d="M16.016 6.772L1.222 2.098S4.29.293 9.11 1.934a13.907 13.907 0 016.906 4.838z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </transition-group>
         <div>
-          <p class="text-gray mt-12">* tunnipalk on võetud Eesti Statistikaametist.</p>
+          <p
+            class="text-gray mt-12"
+          >* Kasutatud on Statistikaameti 2014. aasta Eesti keskmiseid tunnipalkasid. Need on korrutatud läbi koefitsendiga.</p>
+          <p
+            class="text-gray mt-4"
+          >* Kasuta kalkulaatorit, et teada, milline oleks koduse ema töö hind, kui ta esitaks selle eest arve või ostetaks teenus sisse.</p>
+          <p class="text-gray mt-4">* Tunnitasud ei sisalda ületunde, riigipühasid ega öötööd.</p>
         </div>
       </div>
     </div>
   </section>
 </template>
 <script>
-import InfoIcon from './Info-icon';
+import InfoIcon from "./Info-icon";
 export default {
   components: {
     InfoIcon
   },
-  computed:{
-    total(){
-     if(this.budget.length) {return this.budget.reduce((acc,item)=>{
-        return acc = acc + item.hours*(item.occupation.rate*1.654321)
-
-      },0)}
-      return 0
+  computed: {
+    total() {
+      if (this.budget.length) {
+        return this.budget.reduce((acc, item) => {
+          return (acc = acc + item.hours * (item.occupation.rate * 1.654321));
+        }, 0);
+      }
+      return 0;
     }
   },
-  data(){
-    return{
+  data() {
+    return {
       budget: [],
       occupations: [
-        {name:"Lapsehoidja", rate:2.96},
-        {name:"Ettelugeja", rate:4.33},
-        {name:"Kokk", rate:4.52},
-        {name:"Ettekandja", rate:4.62},
-        {name:"Koristaja", rate:2.67},
-        {name:"Nõudepesija", rate:2.69},
-        {name:"Med.õde", rate:5.32},
-        {name:"Hooldaja", rate:2.96},
-        {name:"Nõustaja/Psühholoog", rate:5.32},
-        {name:"Õpetaja", rate:5.84},
-        {name:"Huvijuht", rate:4.33},
-        {name:"Autojuht", rate:5.05},
-        {name:"Logistik", rate:7.43},
-        {name:"Ostleja", rate:3.50},
-        {name:"Riiete pesija", rate:4.90},
-        {name:"Õmbleja", rate:4.45},
-        {name:"Juuksur", rate:3.53},
-        {name:"Raamatupidaja", rate:5.03},
-        {name:"Ehitaja", rate:5.13},
-        {name:"Majahoidja", rate:2.67},
-        {name:"Sisekujundaja", rate:7.22},
-        {name:"IT-tugi", rate:4.47},
+        { name: "Lapsehoidja", rate: 2.96 },
+        { name: "Ettelugeja", rate: 4.33 },
+        { name: "Kokk", rate: 4.52 },
+        { name: "Ettekandja", rate: 4.62 },
+        { name: "Koristaja", rate: 2.67 },
+        { name: "Nõudepesija", rate: 2.69 },
+        { name: "Med.õde", rate: 5.32 },
+        { name: "Hooldaja", rate: 2.96 },
+        { name: "Nõustaja/Psühholoog", rate: 5.32 },
+        { name: "Õpetaja", rate: 5.84 },
+        { name: "Huvijuht", rate: 4.33 },
+        { name: "Autojuht", rate: 5.05 },
+        { name: "Logistik", rate: 7.43 },
+        { name: "Ostleja", rate: 3.5 },
+        { name: "Riiete pesija", rate: 4.9 },
+        { name: "Õmbleja", rate: 4.45 },
+        { name: "Juuksur", rate: 3.53 },
+        { name: "Raamatupidaja", rate: 5.03 },
+        { name: "Ehitaja", rate: 5.13 },
+        { name: "Majahoidja", rate: 2.67 },
+        { name: "Sisekujundaja", rate: 7.22 },
+        { name: "IT-tugi", rate: 4.47 }
       ],
-      item:{
-        occupation:null,
-        comment:null,
-        hours:null,
+      item: {
+        occupation: null,
+        comment: null,
+        hours: null
       }
-      }
+    };
   },
-  methods:{
-    add(item){
-      if(this.item.hours === null || this.item.occupation === null) return;
+  methods: {
+    add(item) {
+      if (this.item.hours === null || this.item.occupation === null) return;
 
       this.budget.push({
         occupation: item.occupation,
         comment: item.comment,
         hours: item.hours
-      })
+      });
 
       this.clearFields();
     },
-    remove(index){
-      this.budget.splice(index,1)
+    remove(index) {
+      this.budget.splice(index, 1);
     },
     clearFields() {
-      for(let field in this.item) {
-        this.item[field] = null
+      for (let field in this.item) {
+        this.item[field] = null;
       }
     }
   },
   filters: {
-    currency(amount){
+    currency(amount) {
       return `${amount.toFixed(2)} €`;
     }
   }
-}
+};
 </script>
 
 <style>
@@ -206,17 +252,19 @@ button:active {
   width: 50px;
 }
 .tooltip .tooltip-inner {
-  background: #FFFAF0;
+  background: #fffaf0;
   color: black;
   border-radius: 5px;
   padding: 10px 20px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 .list-item {
   display: inline-block;
   margin-right: 10px;
 }
-.list-enter-active, .list-leave-active {
+.list-enter-active,
+.list-leave-active {
   transition: all 1s;
 }
 .list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {

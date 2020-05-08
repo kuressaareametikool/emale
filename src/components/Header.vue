@@ -17,14 +17,14 @@
               class="mb-8 mx-auto opacity-75 text-center tracking-wide leading-6 sm:max-w-lg sm:text-xl sm:leading-8 lg:text-left lg:w-full"
             >Meie eesmärk on rääkida emade jaoks olulistest teemadest ning algatada ühiskondike arutelusid ning olulisi muudatusi, et muuta emade elukorraldust Eestis paremaks.</p>
             <div class="mx-auto flex flex-col-reverse sm:flex-row lg:mx-0">
-              <a
+              <SmoothScroll
                 class="mb-8 sm:mr-8 bg-white py-4 rounded-lg shadow-lg text-center px-10 cursor-pointer hover:shadow-none"
-                href="#"
-              >Räägi oma lugu</a>
-              <a
+                href="#footer-section"
+              >Räägi oma lugu</SmoothScroll>
+              <SmoothScroll
                 class="mb-8 bg-white py-4 rounded-lg shadow-lg text-center px-10 cursor-pointer hover:shadow-none"
-                href="#"
-              >Kalkulaator</a>
+                href="#calculator-section"
+              >Kalkulaator</SmoothScroll>
             </div>
             <div class="mx-auto text-center lg:mx-0 lg:text-left">
               <p class="text-xs opacity-50 flex max-w-xs lg:max-w-none">
@@ -51,7 +51,12 @@
 </template>
 
 <script>
-export default {};
+import SmoothScroll from "./SmoothScroll.vue";
+export default {
+  components: {
+    SmoothScroll
+  }
+};
 </script>
 
 <style scoped>
