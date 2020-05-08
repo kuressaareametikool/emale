@@ -142,12 +142,14 @@
         </transition-group>
         <div>
           <p
-            class="text-gray mt-12"
+            class="text-sm opacity-50 mt-12"
           >* Kasutatud on Statistikaameti 2014. aasta Eesti keskmiseid tunnipalkasid. Need on korrutatud läbi koefitsendiga.</p>
           <p
-            class="text-gray mt-4"
+            class="text-sm opacity-50 mt-4"
           >* Kasuta kalkulaatorit, et teada, milline oleks koduse ema töö hind, kui ta esitaks selle eest arve või ostetaks teenus sisse.</p>
-          <p class="text-gray mt-4">* Tunnitasud ei sisalda ületunde, riigipühasid ega öötööd.</p>
+          <p
+            class="text-sm opacity-50 mt-4"
+          >* Tunnitasud ei sisalda ületunde, riigipühasid ega öötööd.</p>
         </div>
       </div>
     </div>
