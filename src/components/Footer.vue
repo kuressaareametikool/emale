@@ -48,7 +48,7 @@
         <div class="lg:w-1/2">
           <div class="sm:flex sm:justify-between sm:max-w-sm sm:mx-auto lg:flex-col lg:justify-end">
             <div class="text-center my-8 sm:text-left lg:text-right">
-              <span class="font-serif text-center text-lg">MTU Emale</span>
+              <span class="font-serif text-center text-lg">MTÜ Emale</span>
               <p class="mt-8 mb-4 font-light text-sm opacity-75">reg.nr. 80571306</p>
               <p class="mb-4 font-light text-sm opacity-75">
                 Tallinn
