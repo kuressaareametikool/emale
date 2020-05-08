@@ -12,13 +12,13 @@
         >
           <p
             class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left lg:text-left"
-          >Siiski on Eestil palju veel areneda, et ka sisuliselt toetada naisi ja emasid.</p>
+          >Eestis on palju kitsaskohti, mis vajavad praktilis lahendusi, et toetada naisi ja emasid.</p>
           <p
             class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left"
-          >Selleks on vaja hakata hindama naiste mitterahalist panust.</p>
+          >Naiste mitterahalise panuse hindamine, lähisuhtevägivald, varalised suhted kooselus ning rasedate ja sünnitajate õigused on vaid mõned näited..</p>
           <p
             class="tracking-wide leading-6 sm:text-center lg:text-left"
-          >Selleks on vaja märgata võimalike kitsaskohti seaduandluses, et emad oleks kaitstud rahaliste ja juriidiliste raskuste eest.</p>
+          >Tuleb leida kitsaskohad seadustes, hariduses ja ühsikonnas, et praegused ja tulevased emad oleks kaitstud.</p>
         </div>
         <!-- Concern content right -->
         <div
@@ -26,14 +26,14 @@
         >
           <p
             class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left"
-          >Oluline on pakkuda vajalikku infot ja tuge, et leida lahendusi läbi keeruliste olukordade, mis puudutavad koduvägivalda.</p>
+          >Oluline on võimaldada emadele parim ettevalmistus, oma õiguste tundmine ning juriidiline, emotsionaalne ja majanduslik turvatunne.</p>
           <p
             class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left"
-          >Palju on veel teha, et tõesti näidata emadele, et nende panust hinnatakse, märgatakse ja peetakse oluliseks.</p>
+          >Palju on veel teha, et näidata emadele, kuidas meie panust märgatakse ja peetakse oluliseks.</p>
           <p
             class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left"
           >Ainult sõnadest ei piisa.</p>
-          <p class="tracking-wide leading-6 sm:text-center lg:text-left">Vaja on tegusid.</p>
+          <p class="mb-8 tracking-wide leading-6 sm:text-center lg:text-left">Vaja on tegusid.</p>
         </div>
       </div>
       <!-- Concern section image -->
