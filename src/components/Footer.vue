@@ -65,10 +65,10 @@
           <div class="mt-8 text-center lg:max-w-sm lg:mx-auto lg:text-right">
             <span class="font-serif text-center text-lg">Jälgi meid sotsiaalmeedias</span>
             <div class="my-8 flex justify-center flex-row lg:justify-end">
-              <a href="https://www.facebook.com/mtyEmale/">
+              <a href="https://www.facebook.com/mtyEmale/" target="_blank">
                 <img src="../assets/facebook-icon.svg" alt="Facebook icon" />
               </a>
-              <a class="ml-8" href="https://www.instagram.com/mtyEmale/">
+              <a class="ml-8" href="https://www.instagram.com/mtuemale/" target="_blank">
                 <img src="../assets/instagram-icon.svg" alt="Instragram icon" />
               </a>
             </div>
