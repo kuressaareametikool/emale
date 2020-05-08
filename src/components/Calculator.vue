@@ -27,6 +27,7 @@
                 v-model="item.hours"
                 type="number"
                 placeholder="Sisesta tunnid"
+                inputmode="decimal"
               />
             </div>
             <div class="lg:order-2 md:order-2 order-1 w-full lg:w-4/12 md:w-7/12 px-3 mb-6 md:mb-0">
