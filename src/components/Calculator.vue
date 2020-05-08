@@ -12,7 +12,7 @@
     <div class="container">
       <p
         class="font-bold font-sans mb-8 tracking-wide leading-6 sm:text-left lg:text-left leading-8"
-      >Kokku oleksite teeninud: <span> {{total.toFixed(2)}}€ </span></p>
+      >Kokku oleksite teeninud: <span> {{total | currency}} </span></p>
 
       <div id="calc-container">
         <form class="w-full">
@@ -22,7 +22,7 @@
                 class="appearance-none block w-full bg-yellow-light shadow-md text-gray-700 text-center rounded py-3 px-4 mb-3 leading-8 focus:outline-none placeholder-brown"
                 id="input-hours"
                 v-model="item.hours"
-                type="text"
+                type="number"
                 placeholder="Sisesta tunnid"
               />
             </div>
@@ -79,12 +79,13 @@
             </div>
           </div>
         </form>
-        <div class="container">
+        <transition-group name="list" class="container">
            <div class= "w-full flex items-center border-t border-gray h-16 " v-for="(item,index) in budget" :key="index">
              <div class="md:w-1/12 w-2/12 text-center font-bold leading-10 overflow-hidden">{{item.hours}}h</div>
              <div class="md:w-3/12 w-5/12 text-center font-normal leading-10 overflow-hidden">{{item.occupation.name}}</div>
-             <div class="md:w-5/12 w-0 invisible md:visible text-center leading-8 overflow-hidden">{{item.comment}}</div>
-             <div class="md:w-2/12 w-3/12 text-center font-bold leading-10 overflow-hidden">{{(item.hours*(item.occupation.rate*1.654321)).toFixed(2)}}€</div>
+             <div class="md:w-5/12 w-0 hidden sm:block text-center leading-8 overflow-hidden">{{item.comment}}</div>
+             <div class="sm:hidden" v-tooltip="item.comment"><InfoIcon class="h-6 w-6" /></div>
+             <div class="md:w-2/12 w-3/12 text-center font-bold leading-10 overflow-hidden">{{(item.hours*(item.occupation.rate*1.654321)) | currency }}</div>
              <div class="md:w-1/12 w-2/12  text-center transform hover:-translate-y-1 hover:scale-110 px-2">
              <button id="delete-btn"
               @click="remove(index)"
@@ -98,23 +99,24 @@
              </button>
              </div>
            </div>
-           <div>
-             <p class="text-gray mt-12">* tunnipalk on võetud Eesti Statistikaametist.</p>
-           </div>
+        </transition-group>
+        <div>
+          <p class="text-gray mt-12">* tunnipalk on võetud Eesti Statistikaametist.</p>
         </div>
       </div>
     </div>
   </section>
 </template>
-
 <script>
- 
+import InfoIcon from './Info-icon';
 export default {
-
+  components: {
+    InfoIcon
+  },
   computed:{
     total(){
      if(this.budget.length) {return this.budget.reduce((acc,item)=>{
-        return acc= acc + item.hours*(item.occupation.rate*1.654321)
+        return acc = acc + item.hours*(item.occupation.rate*1.654321)
 
       },0)}
       return 0
@@ -156,26 +158,43 @@ export default {
   },
   methods:{
     add(item){
+      if(this.item.hours === null || this.item.occupation === null) return;
+
       this.budget.push({
         occupation: item.occupation,
         comment: item.comment,
         hours: item.hours
       })
+
+      this.clearFields();
     },
     remove(index){
       this.budget.splice(index,1)
+    },
+    clearFields() {
+      for(let field in this.item) {
+        this.item[field] = null
+      }
     }
-    
+  },
+  filters: {
+    currency(amount){
+      return `${amount.toFixed(2)} €`;
+    }
   }
 }
 </script>
 
-<style scoped>
+<style>
 .container {
   width: 90%;
   max-width: 1088px;
   margin: auto;
   height: 100%;
+}
+
+button:active {
+  transform: scale(0.95);
 }
 
 #input-btn {
@@ -185,5 +204,23 @@ export default {
 
 #delete-btn {
   width: 50px;
+}
+.tooltip .tooltip-inner {
+  background: #FFFAF0;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.list-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.list-enter-active, .list-leave-active {
+  transition: all 1s;
+}
+.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
 }
 </style>
