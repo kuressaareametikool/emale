@@ -10,7 +10,13 @@
         <h1 class="font-serif text-center text-xl">Kirjuta meile!</h1>
       </div>
       <div class="flex flex-col text-right lg:flex-row">
-        <form method="POST" data-netlify="true" name="contact" data-netlify-honeypot="bot-field" class="my-8 sm:max-w-lg sm:mx-auto lg:w-1/2">
+        <form
+          method="POST"
+          data-netlify="true"
+          name="contact"
+          data-netlify-honeypot="bot-field"
+          class="my-8 sm:max-w-lg sm:mx-auto lg:w-1/2"
+        >
           <input type="hidden" name="form-name" value="contact" />
           <input
             type="text"
@@ -40,34 +46,11 @@
           >Saada</button>
         </form>
         <div class="lg:w-1/2">
-          <div class="my-8 lg:max-w-sm lg:mx-auto">
-            <h1 class="font-serif text-center text-xl lg:text-left">Kontakt</h1>
-          </div>
-          <div class="sm:flex sm:justify-between sm:max-w-sm sm:mx-auto">
-            <div class="mb-6 flex flex-col text-center sm:text-left">
-              <span>Eesnimi Perenimi</span>
-              <a
-                class="my-2 font-light text-sm opacity-75"
-                href="mailto:eesnimi@emale.ee"
-              >eesnimi@emale.ee</a>
-              <a class="my-2 font-light text-sm opacity-75" href="tel:+3725554040">+372 555 4040</a>
-            </div>
-            <div class="mb-4 flex flex-col text-center sm:text-right">
-              <span>Eesnimi Perenimi</span>
-              <a
-                class="my-2 font-light text-sm opacity-75"
-                href="mailto:eesnimi@emale.ee"
-              >eesnimi@emale.ee</a>
-              <a class="font-light text-sm opacity-75" href="tel:+3725554040">+372 555 4040</a>
-            </div>
-          </div>
-          <div class="w-10/12 mx-auto border border-white opacity-25"></div>
-          <div class="sm:flex sm:justify-between sm:max-w-sm sm:mx-auto">
-            <div class="text-center my-8 sm:text-left">
+          <div class="sm:flex sm:justify-between sm:max-w-sm sm:mx-auto lg:flex-col lg:justify-end">
+            <div class="text-center my-8 sm:text-left lg:text-right">
               <span class="font-serif text-center text-lg">MTU Emale</span>
-              <p class="mt-8 font-light text-sm opacity-75">reg.nr. 80571306</p>
-              <p class="my-2 font-light text-sm opacity-75">Lasnamäe tn. 32-38</p>
-              <p class="font-light text-sm opacity-75">
+              <p class="mt-8 mb-4 font-light text-sm opacity-75">reg.nr. 80571306</p>
+              <p class="mb-4 font-light text-sm opacity-75">
                 Tallinn
                 <span class="mx-2">|</span>11413
               </p>
@@ -78,10 +61,10 @@
               <p class="mt-2 text-sm opacity-50 sm:overflow-x-auto">EE207700771004154508</p>
             </div>
           </div>
-          <div class="w-10/12 mx-auto border border-white opacity-25"></div>
-          <div class="mt-8 text-center lg:max-w-sm lg:mx-auto lg:text-left">
+          <div class="w-10/12 mx-auto border border-white opacity-25 lg:hidden"></div>
+          <div class="mt-8 text-center lg:max-w-sm lg:mx-auto lg:text-right">
             <span class="font-serif text-center text-lg">Jälgi meid sotsiaalmeedias</span>
-            <div class="my-8 flex justify-center flex-row lg:justify-start">
+            <div class="my-8 flex justify-center flex-row lg:justify-end">
               <a href="https://www.facebook.com/mtyEmale/">
                 <img src="../assets/facebook-icon.svg" alt="Facebook icon" />
               </a>
@@ -93,8 +76,7 @@
         </div>
       </div>
     </div>
-    <div class="mt-12 w-full border border-white"></div>
-    <div class="py-6 flex justify-center relative">
+    <div class="mt-12 py-6 flex justify-center relative">
       <p class="text-sm opacity-50">@ 2020 MTÜ Emale</p>
     </div>
   </section>
