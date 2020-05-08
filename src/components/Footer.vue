@@ -68,7 +68,7 @@
               <a href="https://www.facebook.com/mtyEmale/">
                 <img src="../assets/facebook-icon.svg" alt="Facebook icon" />
               </a>
-              <a class="ml-8" href="https://www.instagram.com/mtyEmale/">
+              <a class="ml-8" href="https://www.instagram.com/mtuemale/">
                 <img src="../assets/instagram-icon.svg" alt="Instragram icon" />
               </a>
             </div>
