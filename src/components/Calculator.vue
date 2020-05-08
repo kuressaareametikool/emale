@@ -23,6 +23,7 @@
                 id="input-hours"
                 v-model="item.hours"
                 type="number"
+                inputmode="numeric"
                 placeholder="Sisesta tunnid"
               />
             </div>
