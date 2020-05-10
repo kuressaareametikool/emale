@@ -15,7 +15,7 @@
             >Emadelt emadele</h1>
             <p
               class="mb-8 mx-auto opacity-75 text-center tracking-wide leading-6 sm:max-w-lg sm:text-xl sm:leading-8 lg:text-left lg:w-full"
-            >Meie eesmärk on rääkida emade jaoks olulistest teemadest ning algatada ühiskondike arutelusid ning olulisi muudatusi, et muuta emade elukorraldust Eestis paremaks.</p>
+            >Meie eesmärk on rääkida emade jaoks olulistest teemadest ning algatada ühiskondlikke arutelusid ning olulisi muudatusi, et muuta emade elukorraldust Eestis paremaks.</p>
             <div class="mx-auto flex flex-col-reverse sm:flex-row lg:mx-0">
               <SmoothScroll
                 class="mb-8 sm:mr-8 bg-white py-4 rounded-lg shadow-lg text-center px-10 cursor-pointer hover:shadow-none"
