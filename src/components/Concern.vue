@@ -1,7 +1,7 @@
 <template>
   <section id="concern-section" class="mt-20 font-sans font-light text-brown">
     <div class="mb-16">
-      <h1 class="font-serif text-center text-xl">Meie mure.</h1>
+      <h1 class="font-serif text-center text-xl">Meie siht.</h1>
       <img class="mx-auto" src="../assets/heading-line.svg" alt="Line under heading" />
     </div>
     <div class="container">
