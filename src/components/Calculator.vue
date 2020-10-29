@@ -7,7 +7,7 @@
     <div class="lg:mb-24 sm:mb-8">
       <p
         class="tracking-wide text-center leading-8 sm:mx-auto sm:max-w-lg sm:text-lg"
-      >Hindamaks naiste mitterahalist panust.</p>
+      >Kasuta kalkulaatorit, et saada teada, milline oleks koduse ema töö maksumus, kui ta esitaks selle eest arve või ostaks teenust sisse. Kui suur oleks sinu sissetulek, kui sulle makstaks sinu mitterahalise panuse ja töö eest?</p>
     </div>
     <div class="container">
       <p
@@ -146,10 +146,10 @@
           >* Kasutatud on Statistikaameti 2014. aasta Eesti keskmiseid tunnipalkasid. Need on korrutatud läbi koefitsendiga.</p>
           <p
             class="text-sm opacity-50 mt-4"
-          >* Kasuta kalkulaatorit, et teada, milline oleks koduse ema töö hind, kui ta esitaks selle eest arve või ostetaks teenus sisse.</p>
+          >* Tunnitasud ei sisalda ületunde, riigipühasid ega öötööd.</p>
           <p
             class="text-sm opacity-50 mt-4"
-          >* Tunnitasud ei sisalda ületunde, riigipühasid ega öötööd.</p>
+          >* Kalkulaatori mõte on ühtlasi juhtida tähelepanu sellele, kui suure osa sisemajanduse kogutoodanust (SKP-st) 	annab naiste seni arvesse võtmata panus.</p>
         </div>
       </div>
     </div>
