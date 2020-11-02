@@ -150,6 +150,9 @@
           <p
             class="text-sm opacity-50 mt-4"
           >* Kalkulaatori mõte on ühtlasi juhtida tähelepanu sellele, kui suure osa sisemajanduse kogutoodanust (SKP-st) 	annab naiste seni arvesse võtmata panus.</p>
+          <p
+            class="text-sm opacity-50 mt-4"
+          >* Vaata täpsustavat videot <a href="https://www.youtube.com/watch?v=BrnZMrjsf6w" class="underline" target="_blank">siit</a></p>
         </div>
       </div>
     </div>
